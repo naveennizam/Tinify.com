@@ -477,9 +477,9 @@ function RemoveBg() {
   const handleFileChange = (e) => {
 
     const allowedTypes = ["image/jpg", "image/jpeg", "image/png", "image/webp"];
-    const file = e.target.files.file?.[0]; // Take the first file (can add loop for multi)
-
-    if (!file || !allowedTypes.includes(file.mimetype)) {
+    const file = e.target.files[0]; // Take the first file (can add loop for multi)
+// console.log(e.target.files[0].type,allowedTypes.includes(e.target.files[0].type),e.target.files[0])
+    if ( !allowedTypes.includes(e.target.files[0].type)) {
       fileInputRef.current.value = '';
       alert("Only PNG, JPG, JPEG, WEBP allowed")
 
