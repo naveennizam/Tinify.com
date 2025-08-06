@@ -310,7 +310,7 @@ import { useState, useEffect } from "react";
 //         };
 
 //         const res = await fetch(
-//             `${process.env.REACT_APP_APP_URL}/remove_bg`,
+//             `${process.env.RENDER_PROD}/remove_bg`,
 //             request
 //         );
 
@@ -529,7 +529,7 @@ function RemoveBg() {
       body: formData,
     };
     const response = await fetch(
-      `${process.env.REACT_APP_APP_URL}/remove-bg`, request);
+      `${process.env.RENDER_PROD}/remove-bg`, request);
 
     let res = await response.blob();
     let blobUrl = URL.createObjectURL(res)

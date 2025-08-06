@@ -52,7 +52,7 @@ function Compress() {
     };
 
     const res = await fetch(
-      `${process.env.REACT_APP_APP_URL}/profile`,
+      `${process.env.RENDER_PROD}/profile`,
       request
     );
 
