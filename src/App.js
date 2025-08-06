@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage';
 import Compress from './pages/Compress';
 import RemoveBg from './pages/RemoveBg';
 // import NotFoundPage from './pages/NotFoundPage'; // Optional 404 page
-
+import { useEffect } from 'react';
 function App() {
 
 
@@ -65,6 +65,7 @@ function App() {
   }, []);
 
   return (
+    // <h1>vfdgdgdfgdfg</h1>
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />

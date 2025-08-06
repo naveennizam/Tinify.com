@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "@imgly/background-removal-node": "^1.4.5",

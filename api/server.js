@@ -96,34 +96,6 @@ app.post('/remove-bg', upload.single('image'), async (req, res) => {
   }
 });
 
-// app.post(
-//   "/remove_bg",
-//   async function (req, res, next) {
-//     try {
-//       const allowedTypes = ["image/jpg", "image/jpeg", "image/png", "image/webp"];
-//       const file = req.files.file?.[0]; // Take the first file (can add loop for multi)
-
-//       if (!file || !allowedTypes.includes(file.mimetype)) {
-//         return res.status(400).send({ response: "Only PNG, JPG, JPEG, WEBP allowed" });
-//       }
-
-//       const originalname = file.originalname;
-//       const inputPath = file.path;
-//       const outputPath = path.join(downloaded, originalname);
-
-
-//       return res.download(outputPath, originalname, (err) => {
-//         if (err) {
-//           console.error("Download error:", err);
-//           return res.status(500).send({ response: "Download failed" });
-//         }
-//       });
-//     } catch (e) {
-//       console.error(" error:", e);
-//       return res.status(500).send({ response: "Error please try again." });
-//     }
-//   }
-// );
 
 
 app.use(function (req, res, next) {
